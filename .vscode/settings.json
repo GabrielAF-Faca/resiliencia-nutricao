@@ -1,0 +1,33 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 100,
+            "server": "192.169.254.1",
+            "port": 1433,
+            "askForPassword": true,
+            "driver": "MSSQL",
+            "database": "eny",
+            "username": "enynet",
+            "name": "Eny"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "password": "ZtnNHR87t7jSF0k",
+            "name": "db",
+            "username": "root",
+            "database": "sys"
+        }
+    ]
+}

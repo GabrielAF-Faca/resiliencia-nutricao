@@ -1,0 +1,29 @@
+
+
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+EXPOSE 5001
+
+ENV ASPNETCORE_URLS=http://+:5001
+ENV TZ=America/Sao_Paulo
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+COPY ["src/Ufn.Resiliencia.Api.Auth.WebApi/Ufn.Resiliencia.Api.Auth.WebApi.csproj", "src/Ufn.Resiliencia.Api.Auth.WebApi/"]
+RUN dotnet restore "src/Ufn.Resiliencia.Api.Auth.WebApi/Ufn.Resiliencia.Api.Auth.WebApi.csproj"
+COPY . .
+WORKDIR "/src/src/Ufn.Resiliencia.Api.Auth.WebApi"
+RUN dotnet build "Ufn.Resiliencia.Api.Auth.WebApi.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish -c Release -o /app/publish
+
+WORKDIR /
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN date
+
+# Run application
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Ufn.Resiliencia.Api.Auth.WebApi.dll"]

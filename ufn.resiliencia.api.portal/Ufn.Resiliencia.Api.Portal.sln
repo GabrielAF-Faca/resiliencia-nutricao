@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ufn.Resiliencia.Api.Portal.Application", "src\Ufn.Resiliencia.Api.Portal.Application\Ufn.Resiliencia.Api.Portal.Application.csproj", "{FEA189B1-6925-4986-AA16-8E6925ECC941}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ufn.Resiliencia.Api.Portal.Domain", "src\Ufn.Resiliencia.Api.Portal.Domain\Ufn.Resiliencia.Api.Portal.Domain.csproj", "{144C2492-A34C-4173-A1B7-9A14C3B2A4D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ufn.Resiliencia.Api.Portal.Infra", "src\Ufn.Resiliencia.Api.Portal.Infra\Ufn.Resiliencia.Api.Portal.Infra.csproj", "{F07E629C-8606-4915-979A-F4C51C05C333}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ufn.Resiliencia.Api.Portal.Api", "src\Ufn.Resiliencia.Api.Portal.Api\Ufn.Resiliencia.Api.Portal.Api.csproj", "{E9729C7A-ABC3-4499-9AB9-C7F06943AB26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{78D41796-87A0-43E9-B05C-C06B5A0F1FED}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEA189B1-6925-4986-AA16-8E6925ECC941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA189B1-6925-4986-AA16-8E6925ECC941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA189B1-6925-4986-AA16-8E6925ECC941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA189B1-6925-4986-AA16-8E6925ECC941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144C2492-A34C-4173-A1B7-9A14C3B2A4D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144C2492-A34C-4173-A1B7-9A14C3B2A4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144C2492-A34C-4173-A1B7-9A14C3B2A4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144C2492-A34C-4173-A1B7-9A14C3B2A4D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07E629C-8606-4915-979A-F4C51C05C333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07E629C-8606-4915-979A-F4C51C05C333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07E629C-8606-4915-979A-F4C51C05C333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07E629C-8606-4915-979A-F4C51C05C333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9729C7A-ABC3-4499-9AB9-C7F06943AB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9729C7A-ABC3-4499-9AB9-C7F06943AB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9729C7A-ABC3-4499-9AB9-C7F06943AB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9729C7A-ABC3-4499-9AB9-C7F06943AB26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4D1288C-9BB7-4297-A0B9-4250B8A4E09E}
+	EndGlobalSection
+EndGlobal
