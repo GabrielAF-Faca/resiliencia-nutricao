@@ -1,0 +1,27 @@
+No arquivo resiliencia.sql:
+
+1. Criar a base auth
+2. Criar a base resilience
+3. Criar as tabelas na base resilience
+------------------------------------------------
+1. Abrir o projeto Auth no Visual Studio
+2. Abrir o arquivo AppSettings.json e alterar a string do banco apontando para o localhost
+3. Ferramentas -> Gerenciador de Pacotes Nuget -> Console do gerenciador de pacotes
+4. Rodar o comando Update-Database
+
+-------------------------------------------------
+
+Entrar no pasta do projeto Auth:
+
+docker build -t ufn-resiliencia-api-auth .
+
+Entrar na pasta do projeto Portal:
+
+docker build -t ufn-resiliencia-api-portal .
+
+Entrar na pasta utils:
+docker compose up -d
+
+Entrar na pasta Webui:
+npm install
+npm start
